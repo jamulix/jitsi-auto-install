@@ -1,0 +1,1 @@
+# jitsi-auto-install
