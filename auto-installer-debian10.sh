@@ -5,6 +5,7 @@ echo 'deb [signed-by=/usr/share/keyrings/jitsi-keyring.gpg] https://download.jit
 apt update
 apt upgrade -y
 apt install apt-transport-https mc curl gpg lsb-release -y
+apt-get install -y dnsutils
 ip=$(ip route get 8.8.8.8 | awk -F"src " 'NR==1{split($2,a," ");print a[1]}')
 echo "**********************************************************"
 echo "* RACKNERD JITSI MEET INSTALL *"
