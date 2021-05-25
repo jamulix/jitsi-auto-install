@@ -7,8 +7,8 @@ echo
 echo "Next step is to add the following to the end of the configuration file and then save"
 echo
 echo
-echo " VirtualHost " "guest.meet.racknerddemo.com" "
-    authentication = "anonymous"
+echo " VirtualHost " ("guest.meet.racknerddemo.com")"
+    authentication = " ( "anonymous" ) "
     c2s_require_encryption = false "
 echo
 echo
