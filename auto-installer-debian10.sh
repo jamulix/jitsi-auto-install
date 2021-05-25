@@ -7,7 +7,9 @@ apt upgrade -y
 apt install apt-transport-https mc curl gpg lsb-release -y
 ip=$(ip route get 8.8.8.8 | awk -F"src " 'NR==1{split($2,a," ");print a[1]}')
 echo "**********************************************************"
-echo "* RACKNERD JITSI INSTALL *"
+echo "* RACKNERD JITSI MEET INSTALL *"
+echo "* VPS, DEDICATED SERVERS, HOSTING *"
+echo "* -- www.racknerd.com -- *"
 echo "**********************************************************"
 sleep 1
 echo "Set Hostname enter hostname for Jitsi Meet example: meet.racknerddemo.com"
