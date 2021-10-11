@@ -7,15 +7,15 @@ apt install apt-transport-https mc curl gpg lsb-release -y
 apt-get install -y dnsutils
 ip=$(ip route get 8.8.8.8 | awk -F"src " 'NR==1{split($2,a," ");print a[1]}')
 echo "**********************************************************"
-echo "* RACKNERD JITSI MEET INSTALL *"
+echo "* LINUX JITSI MEET INSTALL *"
 echo "* VPS, DEDICATED SERVERS, HOSTING *"
-echo "* -- www.racknerd.com -- *"
+echo "* -- www.ds01.de -- *"
 echo "**********************************************************"
 sleep 1
-echo "Set Hostname enter hostname for Jitsi Meet example: meet.racknerddemo.com"
+echo "Set Hostname enter hostname for Jitsi Meet example: meet.ds01.de"
 read hostname
 host=${hostname%.*.*}
-echo $'127.0.0.1	localhost\n'$ip'	'$hostname'	'$host > /etc/hosts
+echo $'127.0.0.1	localhost\n'$ip'	'$hostname'	'$host >> /etc/hosts
 hostnamectl set-hostname $host
 echo "Checking that $hostname is pointed to $ip"
 dnscheck=`dig +short A $hostname @8.8.8.8`
