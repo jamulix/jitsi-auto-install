@@ -26,7 +26,7 @@ And uncomment anonymousdomain
    
         // When using authentication, domain for guest users.
         // anonymousdomain: 'guest.example.com',
-        anonymousdomain: 'guest.meet.racknerddemo.com',
+        anonymousdomain: 'guest.meet.ds01.de',
 
 Step 4
 
@@ -37,7 +37,7 @@ nano /etc/jitsi/jicofo/sip-communicator.properties
 add the following line
 org.jitsi.jicofo.auth.URL=XMPP:<domain>
 
-example: org.jitsi.jicofo.auth.URL=XMPP:meet.racknerddemo.com
+example: org.jitsi.jicofo.auth.URL=XMPP:meet.ds01.de
 
 Step 5.
 
